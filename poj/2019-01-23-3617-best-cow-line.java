@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 // 2019-01-23-3617-best-cow-line
-public class Solution {
+public class Main {
 
   static int decide(String input, int i, int j) {
     int ii = i;
@@ -38,6 +38,11 @@ public class Solution {
         j--;
       }
     }
-    System.out.print(res);
+    for (int k = 0; k < res.length(); k++) {
+      if (k != 0 && k % 80 == 0)
+        System.out.println();
+      System.out.print(res.charAt(k));
+    }
+
   }
 }
